@@ -40,6 +40,9 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 
 **PROGRAM**
+
+SYNCHRONOUS-UP-COUNTER:
+
 ```
 module ex11(out,clk,rst);
 input clk,rst;
@@ -53,16 +56,42 @@ begin
 end
 endmodule 
 ```
+SYNCHRONOUS-DOWN-COUNTER:
 
+```
+module ex12(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out-1;
+end
+endmodule 
+```
 
 **RTL LOGIC UP COUNTER**
 
+SYNCHRONOUS-UP-COUNTER:
+
 <img width="1187" height="512" alt="ex 11" src="https://github.com/user-attachments/assets/b0aa1108-9c6c-4698-b855-135752da6057" />
+
+SYNCHRONOUS-DOWN-COUNTER:
+
+<img width="1237" height="694" alt="ex 12" src="https://github.com/user-attachments/assets/fc2a853e-39d8-48ef-94e9-7929b3d11acf" />
 
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
+SYNCHRONOUS-UP-COUNTER:
+
 <img width="1920" height="1200" alt="ex11" src="https://github.com/user-attachments/assets/d7188268-a2ec-4de9-8c22-e4414ba69cd5" />
+
+SYNCHRONOUS-DOWN-COUNTER:
+
+<img width="1920" height="1131" alt="ex12" src="https://github.com/user-attachments/assets/00b886fa-535c-4c38-b468-72c8bd918741" />
 
 
 **TRUTH TABLE**
