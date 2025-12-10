@@ -72,7 +72,7 @@ end
 endmodule 
 ```
 
-**RTL LOGIC UP COUNTER**
+**RTL LOGIC UP AND DOWN COUNTER**
 
 SYNCHRONOUS-UP-COUNTER:
 
@@ -83,7 +83,7 @@ SYNCHRONOUS-DOWN-COUNTER:
 <img width="1237" height="694" alt="ex 12" src="https://github.com/user-attachments/assets/fc2a853e-39d8-48ef-94e9-7929b3d11acf" />
 
 
-**TIMING DIAGRAM FOR IP COUNTER**
+**TIMING DIAGRAM FOR UP AND DOWN COUNTER**
 
 SYNCHRONOUS-UP-COUNTER:
 
